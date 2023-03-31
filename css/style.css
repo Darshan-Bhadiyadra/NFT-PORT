@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+/* bakbak-one-regular - latin */
+@font-face {
+    font-family: 'Bakbak One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bakbak-one-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/bakbak-one-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bakbak-one-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bakbak-one-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/bakbak-one-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bakbak-one-v6-latin-regular.svg#BakbakOne') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v12-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }  
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* line-height: 90px; */
+    font-size: 25px;
+    background-color: var(--bgcolor);
+    color: var(--color);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color:white;
+    --black:#000000;
+    --green:#00FFa3;
+    --yellow:#FEE600;
+    --inter:'Inter';
+    --bakbak:'Bakbak One';
+    --bgcolor:#030b21;
+    --boxcolor:#1D253B;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: yellow;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.spacer{
+    padding: 100px 0;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content{ 
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-item{
+    align-items: center;
+}
+
+header{
+    background-color: #030B21;
+    padding: 40px 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.buttonyellow a{
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 14px;
+    font-family: var(--bakbak);
+    padding: 20px 35px;
+    transform: translateY(0);
+}
+
+ .buttonyellow i{
+    margin: 0 5px; 
+}
+
+.buttongreen a{
+    background-color: var(--green);
+    color: var(--black);
+    font-size: 14px;
+    font-family: var(--bakbak);
+    padding: 20px 35px;
+}
+
+.buttongreen i{
+    margin: 0 5px;
+}
+
+
+/*======================================================================
+                            Begining of Header
+======================================================================*/
+
+.header .logo{
+    width: 10%;
+}
+
+.menu li a{
+    color: var(--color);
+    font-family: var(--bakbak);
+    font-size: 16px;
+    margin-right: 30px;
+    margin-left: 0;
+    padding: 5px;
+}
+
+.menu i{
+    margin: 0 10px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.buttons{
+    column-gap: 20px;
+}
+
+
+
+/*======================================================================
+                            Begining of Banner
+======================================================================*/
+
+.backgroundimage{
+    background-image: url(../image/bg-2.jpg);
+    padding: 225px 0;
+    background-size: cover;
+    margin-top: 100px;
+    /* background-position: center; */
+}
+
+.bannertxt,.bannerimg{
+    width: 50%;
+    font-family: var(--bakbak);
+    color: var(--color);
+}
+
+.bannertxt .txt1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.bannertxt span{
+    color: var(--yellow);
+    padding: 10px;
+    font-weight: 500;
+}
+
+.bannertxt i{
+    padding: 10px;
+}
+
+.bannertxt h2{
+    font-size: 72px;
+    margin-bottom: 20px;
+    line-height: 90px;
+    letter-spacing: 2px;
+}
+
+.bigtxt2 .span2{
+    color: var(--green);
+}
+
+.bannertxt p{
+    width: 70%;
+    font-size: 18px;
+    margin: 0 0 60px;
+}
+
+.buttons li{
+    transition: .3s;
+}
+
+.buttons li:hover{
+    transform: translateY(-4px);  
+}
+
+.buttons .buttongreen a:hover{    
+    background-color: var(--yellow);
+}
+
+/*================ 
+      Blackrow 
+=================*/
+
+.blackraw{
+    margin-top: -80px;
+}
+
+.black-box-1{
+    width: 25%;
+    padding: 0 2px;
+}
+
+.black-box-content{
+    padding: 15px 0px;
+    background-color: var(--black);
+}
+
+.content h2{
+    color: var(--green);
+    text-align: center;
+    font-size: 48px;
+    font-family: var(--bakbak);
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.content p{
+    color: var(--color);
+    font-size: 16px;
+    font-family: var(--inter);
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+
+/*======================================================================
+                            Begining of About US
+======================================================================*/
+
+.left-about-image , .right-about-txt{
+    width: 50%;
+    padding: 0 24px;
+}
+
+.right-about-txt h4{
+    color: var(--green);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin: 0 0 5px;
+}
+
+.right-about-txt h2{
+    color: var(--color);
+    font-size: 16px;
+    font-family: var(--bakbak);
+    font-size: 48px;
+    margin: 0 0 15px;
+}
+
+.right-about-txt p{
+    font-size: 16px;
+    font-family: var(--inter);
+    margin: 0 0 16px;
+    line-height: 1.5;
+    width: 104%;
+}
+
+.right-about-txt h3{
+    color: var(--yellow);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin: 32px 0 5px;
+}
+
+.right-about-txt h5{
+    color: var(--color);
+    font-size: 16px;
+    font-family: var(--bakbak);
+    font-size: 30px;
+    margin: 0 0 13px;
+}
+
+.right-about-txt .aboutpara{
+    color: var(--color);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin: 0 0 16px;
+    line-height: 1.4;
+    width: 104%;
+}
+
+.box-4-list{
+    font-family: var(--bakbak);
+    font-size: 18px;
+    margin: 30px 0;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.box-4-list li{
+    border-top: 1px rgb(40, 47, 77) solid;
+    padding: 16px 0;
+}
+
+.colyellow{
+    color: var(--yellow);
+}
+
+.colgreen{
+    color: var(--green);
+}
+
+/*=========================
+ section backgroundimage2 
+=========================*/
+
+.backgroundimage2{
+    background-image: url(../image/bg-2.jpg);
+    padding: 100px 0;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+}
+
+.title p{
+    font-family: var(--inter);
+    color: var(--green);
+    font-size: 16px;
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+
+.title h2{
+    font-family: var(--bakbak);
+    font-size: 48px;
+    margin: 0 0 40px;
+    letter-spacing: 1px;
+}
+
+.roadmapbox1{
+    width: 50%;
+    margin: 25px 0 0 ;
+    padding: 0 12px;
+}
+
+.roadmapbox1:hover .roadmap-box-1txt{
+    color: var(--yellow);
+}
+
+.roadmapbox1:hover h2{
+    color: var(--yellow);
+}
+
+.roadmapbox1 img{
+    width: 8%;
+    margin-bottom: -45.6px;
+    margin-left: 542px;
+}
+
+.insidebox{
+    background-color: var(--black);
+    position: relative;
+}
+
+.roadmapbox1:hover .skewbox,
+.roadmapbox1:hover .skewboxesroadmap .skewbox:nth-child(1),
+.roadmapbox1:hover .skewboxesroadmap .skewbox:nth-child(2),
+.roadmapbox1:hover .skewboxesroadmap .skewbox:nth-child(3),
+.roadmapbox1:hover .skewboxesroadmap .skewbox:nth-child(4),
+.roadmapbox1:hover .skewboxesroadmap .skewbox:nth-child(5)
+{
+    background-color: var(--yellow);
+    transition: .3s;
+}
+
+.team-inside-box :hover .team-left-img img{
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+
+.skewboxesroadmap{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.skewbox{
+    width: 25px;
+    height: 10px;
+    background-color: var(--green);
+    margin: 0 2px;
+    transform: skewX(-25deg);
+}
+
+.skewboxesroadmap .skewbox:nth-child(1){
+    background-color: var(--green);
+    opacity: 0.1;   
+}
+
+.skewboxesroadmap .skewbox:nth-child(2){
+    background-color: var(--green);
+    opacity: 0.2;   
+}
+
+.skewboxesroadmap .skewbox:nth-child(3){
+    background-color: var(--green);
+    opacity: 0.4;   
+}
+
+.skewboxesroadmap .skewbox:nth-child(4){
+    background-color: var(--green);
+    opacity: 0.7;   
+}
+
+.skewboxesroadmap .skewbox:nth-child(5){
+    background-color: var(--green);
+    opacity: 0.9;   
+}
+
+.roadmap-box-1txt{
+    font-size: 24px;
+    font-family: var(--bakbak);
+    line-height: 3;
+}
+
+.roadmapbox-content h2{
+    color: var(--green);
+    font-size: 24px;
+}
+
+.roadmapbox-content{
+    font-size: 16px;
+    font-family: var(--inter);
+    text-align: left;
+    padding: 40px;
+    line-height: 1.4;
+}
+
+
+/*=====================================
+        Begining of Slider
+======================================*/
+
+.slidertxt{
+    width: 25%;
+    padding: 0 12px;
+    height: 306px;
+}
+
+.sliderimageslide{
+    width: 75%;
+    padding: 0 12px 25px;
+}
+
+.sliderbox1img{
+    width: 306px;
+    height: 306px;
+}
+
+.slboximg img{
+    width: 50%;
+}
+
+.slidertxtbox h4{
+    color: var(--green);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin-top: -145px;
+}
+
+.bored{
+    color: var(--color);
+    font-size: 48px;
+    font-family: var(--bakbak);
+    top: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+.slidertxtbox p{
+    font-size: 16px;
+    font-family: var(--inter);
+    margin-top: 12px;
+    line-height: 1.4;
+    position: absolute;
+}
+
+
+/*=====================================
+        Begining of #Slider
+======================================*/
+
+.slidecircle{
+    width: 25%;
+    padding:0 12px;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 80px auto;
+    position: relative;
+    background-color: var(--boxcolor);
+}
+
+.circle .buttonyellow{
+    margin: 80px auto;
+    position: absolute;
+}
+
+.circle .buttonyellow a{
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 14px;
+    font-family: var(--bakbak);
+    padding: 20px 34px;
+    transform: translateY(0);
+}
+
+
+
+/*======================================================================
+                            Begining of Team
+======================================================================*/
+
+.team-right-txt{
+    width: 55%;
+}
+
+.team-left-img{
+    overflow: hidden;
+}
+
+.team-left-img img{
+    transform: scale(1);
+}
+
+
+.teambox-content{
+    position: relative;
+}
+
+.teambox1{
+    width: 50%;
+    padding: 13px;
+}
+
+.teambox1:hover h2{
+    color: var(--yellow);
+    transition: .3s;
+}
+
+.teambox1:hover .skewbox,
+.teambox1:hover .skewboxes .skewbox:nth-child(1),
+.teambox1:hover .skewboxes .skewbox:nth-child(2),
+.teambox1:hover .skewboxes .skewbox:nth-child(3),
+.teambox1:hover .skewboxes .skewbox:nth-child(4),
+.teambox1:hover .skewboxes .skewbox:nth-child(5)
+{
+    background-color: var(--yellow);
+}
+
+.team-inside-box :hover .team-left-img img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.team-inside-box{
+    background-color: var(--black);
+    padding: 20px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.skewboxes{
+    position: absolute;
+    top: -20px;
+    right: -25px;
+}
+
+.skewbox{
+    width: 25px;
+    height: 10px;
+    background-color: var(--green);
+    margin: 0 2px;
+    transform: skewX(-25deg);
+}
+
+.skewboxes .skewbox:nth-child(1){
+    background-color: var(--green);
+    opacity: 0.1;   
+}
+
+.skewboxes .skewbox:nth-child(2){
+    background-color: var(--green);
+    opacity: 0.2;   
+}
+
+.skewboxes .skewbox:nth-child(3){
+    background-color: var(--green);
+    opacity: 0.4;   
+}
+
+.skewboxes .skewbox:nth-child(4){
+    background-color: var(--green);
+    opacity: 0.7;   
+}
+
+.skewboxes .skewbox:nth-child(5){
+    background-color: var(--green);
+    opacity: 0.9;   
+}
+
+.team-right-txt{
+    padding: 0 17px 0 30px;
+}
+
+.team-right-txt h2{
+    font-size: 24px;
+    font-family: var(--bakbak);
+    margin: 30px 0 10px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.team-right-txt p{
+    font-size: 16px;
+    font-family: var(--inter);
+    margin: 0 0 16px;
+}
+
+.teampara{
+    font-size: 16px;
+    font-family: var(--inter);
+    margin: 0 0 16px;
+    width: 110%;
+    text-align: left;
+}
+
+.team-social-icon li{
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 0;
+}
+
+.team-social-icon li:hover{
+    color: var(--green);
+    transform: translateY(5px);
+    transition: .4s;
+}
+
+.small-bottom-img{
+    width: 40px;
+    height: 40px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+}
+
+
+/*======================================================================
+                            Begining of Faq
+======================================================================*/
+
+.faqboxes{
+    margin-top: 60px;
+}
+
+.faq-box-4-list{
+    font-family: var(--bakbak);
+    font-size: 24px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.faq-box-4-list li{
+    background-color: var(--boxcolor);
+    padding: 24px 18px;
+    margin-bottom: 30px;
+}
+
+.faqicon{
+    font-weight: 200;
+    font-family: var(--bakbak);
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.faqicon:hover{
+    transform: rotate(45deg);
+    color: var(--yellow);
+}
+
+
+/*======================================================================
+                            Begining of Articles BLOG
+======================================================================*/
+
+.blogbox1{
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.blogimage{
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--boxcolor);
+    transition: .5s;
+}
+
+.blogimage1{
+    object-fit: cover;
+    background-size: cover;
+}
+
+.blogimage{
+    transform: scale(1);
+}
+
+.blogimage :hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.insideblogbox{
+    background-color: var(--boxcolor);
+    padding: 15px 30px 20px;
+}
+
+.insideblogbox h3{
+    font-family: var(--inter);
+    color: var(--green);
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.insideblogbox h2{
+    font-family: var(--bakbak);
+    color: var(--color);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    cursor: pointer;
+    margin: 0 0 20px;
+}
+
+.insideblogbox h2:hover{
+    color: var(--green);
+}
+
+.flexblogtxt h4{
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 35px 22px 0;
+    cursor: pointer;
+}
+
+.flexblogtxt h4:hover{
+    color: var(--green);
+}
+
+.flexblogtxt h3{
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 20px 22px 0;
+    color: var(--color);
+    cursor: pointer;
+}
+
+.flexblogtxt h3:hover{
+    color: var(--green);
+}
+
+.flexblogtxt p{
+    font-family: var(--inter);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bottom-blog-txt{
+    padding: 20px 0 0;
+    margin: 30px 0 0;
+    border-top: 1px white solid;
+    cursor: pointer;
+}
+
+.bottom-blog-txt h2:hover{
+    color: var(--green);
+}
+
+.bot-blog-icon i{
+    font-size: 22px;
+    color: var(--color);
+}
+
+.bottom-blog-txt .bot-blog-icon:hover{
+    color: var(--green);
+}
+
+.blogbtn{
+    text-align: center;
+    margin: 60px 0;
+}
+
+
+/*======================================================================
+                            Begining of Articles BLOG
+======================================================================*/
+
+.partner10logo{
+    margin: 60px 0 0;
+}
+
+.logobox1{
+    width: 20%;
+}
+
+.logoimage{
+    padding: 24px 40px;
+    background-color: var(--boxcolor);
+}
+
+.img-logo img{
+    width: 80%;
+}
+
+.logoimage2{
+    padding: 24px 40px;
+    background-color: var(--black);
+}
+
+.img-logo2 img{
+    width: 80%;
+}
+
+
+/*======================================================================
+                            Begining of Community
+======================================================================*/
+
+.bgimage3{
+    background-image: url(../image/bg-3.jpg);
+}
+
+.bgimage3 h2{
+    margin: 0 303px 70px 303px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+
+/*======================================================================
+                            Begining of Footer
+======================================================================*/
+
+.bgimagefooter{
+    background-image: url(../image/bg-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo1 img{
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.footericons li{
+    background-color: var(--boxcolor);
+    color: var(--color);
+    margin: 0 8px;
+    border-radius: 5px;
+    width: 45px;
+    height: 47px;
+    padding: 16px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.footericons .dis{
+    font-size: 14px;
+    text-align: center;
+    margin-left: -2px;
+}
+
+.footericons li:hover{
+    color: var(--black);
+    background: var(--green);
+}
+
+.footerlasttxt{
+    border-top: 1px rgb(40, 23, 77) solid;
+}
+
+.footerlasttxt h3{
+    font-size: 16px;
+    font-family: var(--inter);
+    font-weight: 400;
+    color: #d8d2d2;
+    padding: 26px 0;
+}
+
+.footerlasttxt i{
+    font-size: 12px;
+}
+
