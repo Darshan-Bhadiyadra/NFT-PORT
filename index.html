@@ -92,7 +92,7 @@
                 <div class="black-box-1">
                     <div class="black-box-content">
                         <div class="content">
-                            <h2>8888</h2>
+                            <h2 id="black-box-11">320</h2>
                             <p>TOTAL ITEMS</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                 <div class="black-box-1">
                     <div class="black-box-content">
                         <div class="content">
-                            <h2>1460</h2>
+                            <h2 id="black-box-22">410</h2>
                             <p>TOTAL OWNERS</p>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                 <div class="black-box-1">
                     <div class="black-box-content">
                         <div class="content">
-                            <h2>0.84</h2>
+                            <h2 id="black-box-33">190</h2>
                             <p>FLOOR PRICE [ETH]</p>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                 <div class="black-box-1">
                     <div class="black-box-content">
                         <div class="content">
-                            <h2>13K</h2>
+                            <h2 id="black-box-44">195</h2>
                             <p>VOLUME TRADED [ETH]</p>
                         </div>
                     </div>
@@ -842,10 +842,27 @@
 
     <!-- jquerysheets -->
     <script src="js/jquery-3.6.3.min.js"></script>
+
     <!-- owl-carousel-minsheets -->
     <script src="js/owl.carousel.min.js"></script>
+
     <!-- javascriptsile -->
     <script src="js/script.js"></script>
+    
+    <!-- javascript - counter files -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> -->
+    <script src="js/countMe.min.js"></script>
+
+    <script>
+        window.onload = ()=>{
+            // $(selector).countMe(delay,speed)
+            $("#black-box-22").countMe(14,20);
+            $("#black-box-33").countMe(14,40);
+            $("#black-box-44").countMe(14,45);
+            $("#black-box-11").countMe(14,25);
+         }
+    </script>
+  
 
 
 </body>
